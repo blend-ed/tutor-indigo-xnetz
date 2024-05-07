@@ -29,30 +29,25 @@
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
       <ul class="logo-list">
-        <li>Powered by:</li>
+        <li>XNetz Game Images by</li>
         <li>
-          <a href="https://docs.tutor.edly.io" rel="noopener" target="_blank">
-            <img src="${static.url('images/tutor-logo.png')}" alt="Runs on Tutor" width="57" />
-          </a>
-        </li>
-        <li>
-          <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
-            <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="79" />
-          </a>
+          <img src="${static.url('images/philip-julie.jpg')}" alt="philip-julie" height="72" />
         </li>
       </ul>
     </div>
-    {% if INDIGO_FOOTER_NAV_LINKS %}
-    <nav class="nav-colophon" aria-label="${_('About')}">
-      <ol>
-          {% for link in INDIGO_FOOTER_NAV_LINKS %}
-          <li>
-            <a href="{{ link['url'] }}">{{ link['title'] }}</a>
-          </li>
-          {% endfor %}
-      </ol>
-    </nav>
-    {% endif %}
+    <div class="powered-area">
+      <ul class="logo-list">
+        <li>
+          <img src="${static.url('images/xnetz.png')}" alt="xnetz" height="24" />
+        </li>
+        <li>
+          <img src="${static.url('images/xecure-it.png')}" alt="xecure-it" height="24" />
+        </li>
+        <li>
+          <img src="${static.url('images/secure-culture.png')}" alt="secure-culture" height="54" />
+        </li>
+      </ul>
+    </div>
   </div>
   <span class="copyright-site">Copyrights ©${datetime.now().year}. All Rights Reserved.</span>
   % endif
@@ -93,30 +88,25 @@
         ## which are not technically powered by OpenEdX.
         % if not hide_openedx_link:
         <ul class="logo-list">
-          <li>Powered by:</li>
+          <li>XNetz Game Images by</li>
           <li>
-            <a href="https://docs.tutor.edly.io" rel="noopener" target="_blank">
-              <img src="${static.url('images/tutor-logo.png')}" alt="Runs on Tutor" width="57" />
-            </a>
-          </li>
-          <li>
-            <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
-              <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="79" />
-            </a>
+            <img src="${static.url('images/philip-julie.jpg')}" alt="philip-julie" height="72" />
           </li>
         </ul>
       </div>
-      {% if INDIGO_FOOTER_NAV_LINKS %}
-      <nav class="nav-colophon" aria-label="${_('About')}">
-        <ol>
-            {% for link in INDIGO_FOOTER_NAV_LINKS %}
-            <li>
-              <a href="{{ link['url'] }}">{{ link['title'] }}</a>
-            </li>
-            {% endfor %}
-        </ol>
-      </nav>
-      {% endif %}
+      <div class="powered-area">
+        <ul class="logo-list">
+          <li>
+            <img src="${static.url('images/xnetz.png')}" alt="xnetz" height="24" />
+          </li>
+          <li>
+            <img src="${static.url('images/xecure-it.png')}" alt="xecure-it" height="24" />
+          </li>
+          <li>
+            <img src="${static.url('images/secure-culture.png')}" alt="secure-culture" height="54" />
+          </li>
+        </ul>
+      </div>
     </div>
     <span class="copyright-site">Copyrights ©${datetime.now().year}. All Rights Reserved.</span>
     % endif

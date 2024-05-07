@@ -17,11 +17,9 @@ footer.tutor-container {
     }
     .footer-top {
         margin: 0 0 15px;
-        &:after {
-            clear: both;
-            display: block;
-            content: "";
-        }
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
         .powered-area {
             margin: 0 0 10px;
             @include media-breakpoint-up(md) {
@@ -46,22 +44,6 @@ footer.tutor-container {
             font-size: 12px;
             line-height: 18px;
             color: #6B7280;
-            &:first-child {
-                padding-left: 0;
-            }
-            &:last-child {
-                padding-left: 20px;
-                &:after {
-                    position: absolute;
-                    left: 5px;
-                    top: 50%;
-                    content: "";
-                    width: 1px;
-                    height: 29px;
-                    margin: -14px 0 0;
-                    background: #6B7280;;
-                }
-            }
         }
     }
     .nav-colophon {
