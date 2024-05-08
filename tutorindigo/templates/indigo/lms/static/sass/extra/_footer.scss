@@ -19,7 +19,7 @@ footer.tutor-container {
         margin: 0 0 15px;
         display: flex;
         justify-content: space-between;
-        align-self: center;
+        align-items: center;
         .powered-area {
             margin: 0 0 10px;
             @include media-breakpoint-up(md) {
