@@ -62,7 +62,7 @@ hooks.Filters.ENV_PATCHES.add_items(
         (
             "mfe-dockerfile-post-npm-install-learning",
             """
-RUN npm install '@edx/brand@git+https://github.com/rafeehcp/brand-openedx-xnetz.git'
+RUN npm install '@edx/brand@git+https://github.com/blend-ed/brand-openedx-xnetz.git'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^1.0.0'
 RUN npm install '@edx/frontend-component-footer@git+https://github.com/blend-ed/frontend-component-footer-xnetz.git'
 """,
@@ -70,7 +70,7 @@ RUN npm install '@edx/frontend-component-footer@git+https://github.com/blend-ed/
         (
             "mfe-dockerfile-post-npm-install-authn",
             """
-RUN npm install '@edx/brand@git+https://github.com/rafeehcp/brand-openedx-xnetz.git'
+RUN npm install '@edx/brand@git+https://github.com/blend-ed/brand-openedx-xnetz.git'
 """,
         ),
         # Tutor-Indigo v2.1 targets the styling updations in discussions and learner-dashboard MFE
@@ -78,7 +78,7 @@ RUN npm install '@edx/brand@git+https://github.com/rafeehcp/brand-openedx-xnetz.
         (
             "mfe-dockerfile-post-npm-install-discussions",
             """
-RUN npm install '@edx/brand@git+https://github.com/rafeehcp/brand-openedx-xnetz.git'
+RUN npm install '@edx/brand@git+https://github.com/blend-ed/brand-openedx-xnetz.git'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^1.0.0'
 RUN npm install '@edx/frontend-component-footer@git+https://github.com/blend-ed/frontend-component-footer-xnetz.git'
 """,
@@ -86,7 +86,7 @@ RUN npm install '@edx/frontend-component-footer@git+https://github.com/blend-ed/
         (
             "mfe-dockerfile-post-npm-install-learner-dashboard",
             """
-RUN npm install '@edx/brand@git+https://github.com/rafeehcp/brand-openedx-xnetz.git'
+RUN npm install '@edx/brand@git+https://github.com/blend-ed/brand-openedx-xnetz.git'
 RUN npm install '@edx/frontend-component-footer@git+https://github.com/blend-ed/frontend-component-footer-xnetz.git'
 """,
         ),
