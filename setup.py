@@ -13,7 +13,7 @@ def load_readme():
 def load_about():
     about = {}
     with io.open(
-        os.path.join(HERE, "tutorindigo", "__about__.py"),
+        os.path.join(HERE, "tutorxnetz", "__about__.py"),
         "rt",
         encoding="utf-8",
     ) as f:
@@ -25,13 +25,13 @@ ABOUT = load_about()
 
 
 setup(
-    name="tutor-indigo",
+    name="tutor-xnetz",
     version=ABOUT["__version__"],
-    url="https://github.com/overhangio/tutor-indigo",
+    url="https://github.com/blend-ed/tutor-indigo-xnetz",
     project_urls={
         "Documentation": "https://docs.tutor.overhang.io/",
-        "Code": "https://github.com/overhangio/tutor-indigo",
-        "Issue tracker": "https://github.com/overhangio/tutor-indigo/issues",
+        "Code": "https://github.com/blend-ed/tutor-indigo-xnetz",
+        "Issue tracker": "https://github.com/blend-ed/tutor-indigo-xnetz/issues",
         "Community": "https://discuss.openedx.org",
     },
     license="AGPLv3",
@@ -45,7 +45,7 @@ setup(
     include_package_data=True,
     python_requires=">=3.8",
     install_requires=["tutor>=16.0.0,<17.0.0"],
-    entry_points={"tutor.plugin.v1": ["indigo = tutorindigo.plugin"]},
+    entry_points={"tutor.plugin.v1": ["xnetz-theme = tutorxnetz.plugin"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
